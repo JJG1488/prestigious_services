@@ -1,0 +1,36 @@
+{
+  "name": "pointeroofingimprovements",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.42",
+    "@react-google-maps/api": "^2.20.6",
+    "@tailwindcss/cli": "^4.0.15",
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.3",
+    "browser-image-compression": "^2.0.2",
+    "dotenv": "^16.4.7",
+    "google-auth-library": "^9.15.1",
+    "googleapis": "^126.0.1",
+    "next": "15.2.3",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-bootstrap-icons": "^1.11.5",
+    "react-datepicker": "^8.2.1",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0",
+    "twilio": "^5.5.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.15",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.15"
+  }
+}

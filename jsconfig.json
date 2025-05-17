@@ -1,0 +1,96 @@
+// jsconfig.json
+{
+  "compilerOptions": {
+    // --- Module Resolution ---
+    "baseUrl": ".", // Sets the root directory for resolving paths. '.' means the project root.
+    "paths": {
+      // Defines path aliases. '@/' maps to the project root.
+      // Allows imports like: import { getOAuth2Client } from '@/lib/googleAuth';
+      // Instead of: import { getOAuth2Client } from '../../lib/googleAuth';
+      "@/*": ["./*"],
+      "@components/*": ["./src/app/components/*"],
+      "@pages/*": ["src/app/pages/*"],
+      "@styles/*": ["./src/app/styles/*"],
+      "@utils/*": ["utils/*"],
+      "@lib/*": ["./src/app/lib/*"],
+      "@hooks/*": ["hooks/*"],
+      "@context/*": ["context/*"],
+      "@services/*": ["services/*"],
+      "@public/*": ["./public/*"],
+      "@assets/*": ["./public/assets/*"],
+      "@app/*": ["./src/app/*"]
+    },
+    "moduleResolution": "bundler", // Recommended modern mode for module resolution with bundlers like Next.js uses.
+    "resolveJsonModule": true, // Allows importing .json files directly.
+
+    // --- JavaScript Support & Checking (Optional but Recommended) ---
+    "allowJs": true, // Must be true for jsconfig.json to work on JS files.
+    // "checkJs": true, // Enables basic type checking and error reporting in JS files within VS Code. Set to false if you prefer not to have these checks.
+    "strict": true, // Enables stricter type checking rules (recommended if checkJs is true).
+    "noImplicitReturns": true, // Reports errors on functions that don't always return a value.
+    "noUnusedLocals": true, // Reports errors on unused local variables.
+    "noUnusedParameters": true, // Reports errors on unused function parameters.
+
+    // --- JSX Configuration ---
+    "jsx": "preserve", // Tells TypeScript/JavaScript LS to leave JSX as is for Next.js/Babel to handle.
+
+    // --- Environment & Compatibility ---
+    "target": "esnext", // Use the latest ECMAScript features. Next.js handles transpilation for browser compatibility.
+    "lib": ["dom", "dom.iterable", "esnext"], // Includes standard browser and modern JS library types.
+    "module": "esnext", // Use modern ES module syntax.
+    "esModuleInterop": true, // Improves compatibility between CommonJS and ES modules.
+    "forceConsistentCasingInFileNames": true, // Prevents issues caused by inconsistent file casing.
+
+    // --- Build Process ---
+    "skipLibCheck": true, // Speeds up checking by skipping type checks for declaration files (node_modules).
+    "noEmit": true, // Don't output compiled files; jsconfig is for editor integration, Next.js handles the build.
+    "isolatedModules": true, // Ensures each file can be transpiled without relying on other imports, required by some tools.
+    "incremental": true, // Enables faster subsequent checks.
+
+    // --- Next.js Specific ---
+    "plugins": [
+      {
+        "name": "next" // Enables Next.js specific features in the language server (like App Router support).
+      }
+    ]
+  },
+  // --- Project Files ---
+  "include": [
+    // "next-env.d.ts", // Includes Next.js environment type definitions.
+    "**/*.js", // Includes all JavaScript files in the project.
+    "**/*.jsx", // Includes all JSX files (if you use the .jsx extension).
+    "src/app/components/Nav.jsx"
+  ],
+  "exclude": [
+    "node_modules" // Excludes the node_modules folder from project analysis.
+  ]
+}
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": "/",
+//     "paths": {
+//       "@components/*": ["/pointeroofingimprovements/src/app/components/*"],
+//       "@pages/*": ["/pointeroofingimprovements/src/app/pages/*"],
+//       "@styles/*": ["/pointeroofingimprovements/src/app/styles/*"],
+//       "@utils/*": ["/pointeroofingimprovements/src/apputils/*"],
+//       "@app/*": ["/pointeroofingimprovements/src/app/app/*"],
+//       "@api/*": ["/pointeroofingimprovements/src/app/api/*"],
+//       "@lib/*": ["/pointeroofingimprovements/src/app/lib/*"],
+//       "@hooks/*": ["/pointeroofingimprovements/src/app/hooks/*"],
+//       "@context/*": ["/pointeroofingimprovements/src/app/context/*"],
+//       "@services/*": ["/pointeroofingimprovements/src/app/services/*"],
+//       "@public/*": ["/pointeroofingimprovements/public/*"],
+//       "@assets/*": ["/pointeroofingimprovements/public/assets/*"]
+//       // Add more aliases as needed
+//       // e.g., "@layout/*": ["src/layout/*"]
+//       // e.g., "@components/header/*": ["src/components/header/*"]
+//       // e.g., "@utils/api/*": ["src/utils/api/*"]
+//       // e.g., "@app/auth/*": ["src/app/auth/*"]
+//       // e.g., "@api/reviews/*": ["src/api/reviews/*"]
+//       // e.g., "@lib/hooks/*": ["src/lib/hooks/*"]
+//       // e.g., "@hooks/useAuth/*": ["src/hooks/useAuth/*"]
+//       // e.g., "@context/user/*": ["src/context/user/*"]
+//     }
+//   }
+// }
