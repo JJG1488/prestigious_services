@@ -26,7 +26,7 @@ export default function Footer(status) {
     <footer className="py-4 navbar-brand-color brand-text-color">
       <Container>
         {/* Service Area with Map */}
-        <Card
+        {/* <Card
           className="map-section"
           style={{
             marginTop: "50px",
@@ -50,7 +50,7 @@ export default function Footer(status) {
               </Wrapper>
             </Col>
           </Row>
-        </Card>
+        </Card> */}
         <Row>
           <Col md={6}>
             <h5>Prestigious Management Company</h5>

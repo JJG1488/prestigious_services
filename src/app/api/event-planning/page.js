@@ -291,7 +291,7 @@ const EnjoyPlanningIcon = () => (
 // Define the EventPlanningPage component
 export default function EventPlanningPage() {
   return (
-    <div className="bg-cream-50 min-h-screen brand-text-color container-brand-color space container-border-radius">
+    <div className="bg-cream-50 min-h-screen brand-text-color space">
       {" "}
       {/* Overall page background */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 brand-text-color">

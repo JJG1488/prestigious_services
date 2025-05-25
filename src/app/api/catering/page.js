@@ -292,7 +292,7 @@ const EnjoyIcon = () => (
 // Define the CateringPage component
 export default function CateringPage() {
   return (
-    <div className="bg-rose-800 min-h-screen brand-text-color container-brand-color space container-border-radius">
+    <div className="min-h-screen brand-text-color space">
       {" "}
       {/* Overall page background */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 brand-text-color ">
