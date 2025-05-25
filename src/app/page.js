@@ -28,15 +28,16 @@ export default function HomePage() {
       {/* <Hero /> */}
       <Head>
         <title>
-          Pointe Roofing Improvements | Roofing Services in Grosse Pointe, MI
+          Prestigious Managemnet Company Events & Catering | Premier Catering,
+          Event Planning & Rentals in Michigan
         </title>
         <meta
           name="description"
-          content="Top roofing services in Grosse Pointe, Michigan. Contact us for expert installations, repairs, and free inspections."
+          content="Discover top-tier catering, event planning, and rental services in Michigan. From weddings to corporate events, we bring your vision to life with gourmet menus and stunning setups."
         />
         <meta
           name="keywords"
-          content="roofing, Grosse Pointe, Michigan, roof repair, roof installation, roof inspection"
+          content="catering Grosse Pointe, event planning Michigan, rental services, wedding catering, corporate events, party rentals"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -52,23 +53,28 @@ export default function HomePage() {
       <Badges />
       {showBottomButton && (
         <div
-          style={{
-            position: "fixed",
-            bottom: "20px",
-            right: "20px",
-            zIndex: 1000,
-          }}
+        // style={{
+        //   position: "fixed",
+        //   bottom: "20px",
+        //   right: "20px",
+        //   zIndex: 1000,
+        // }}
         >
-          <button
-            className="btn btn-warning"
+          {/* <button
+            // className="btn btn-warning"
+            className="gold-btn"
             onClick={() => setShowModal(true)}
           >
-            Contact Us Now
-          </button>
+            Contact Us Now                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+          </button> */}
         </div>
       )}
       {/* <Footer /> */}
-      <ContactModal show={showModal} onHide={() => setShowModal(false)} />
+      {/* <ContactModal
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        className="btn-brand-color"
+      /> */}
       {/* Other homepage sections can go here */}
     </main>
   );

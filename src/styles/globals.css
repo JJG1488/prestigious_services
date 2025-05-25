@@ -25,101 +25,44 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    /* --foreground: #ededed; */
+    --foreground: #ededed;
   }
 }
-
-/* 
-.hero-container {
-  padding: 100px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-} */
-
-/* .hero-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat url("/RoofingHero2.png");
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 100px;
-  background-position: center;
-  background-blend-mode: multiply;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: var(--font-sans);
-  text-align: center;
-  height: 100vh;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease-in-out;
-  border: solid red 2px;
-} */
-
-/* .hero-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-} */
-
-/* Brightens the text over the Hero container */
-/* .hero-container * {
-  position: relative;
-  z-index: 2;
-} */
-
-/* .hero-top-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-
-
-
-
-} */
-
-/* .hero-top-row h1 {
-  font-size: 36px;
-  transition: color 0.3s ease-in-out;
-  color: white;
-} */
-
-/* .hero-top-row h1:hover {
-  color: black;
-} */
-
-/* .navbar-nav .nav-link {
-  display: block !important;
-  visibility: visible !important;
-  display: block;
-  visibility: visible;
-  z-index: 3;
-} */
 
 .red {
   color: red;
   border: solid red 2px;
 }
 
-/* nav{
-  background-color: var(--color-background);
-  border: solid blue 10px;
-} */
+.green {
+  color: green;
+  border: solid green 2px;
+}
+
+.blue {
+  color: blue;
+  border: solid blue 2px;
+}
+
+.gray {
+  color: gray;
+  border: solid gray 2px;
+}
+
+.yellow {
+  color: yellow;
+  border: solid yellow 2px;
+}
+
+.orange {
+  color: orange;
+  border: solid orange 2px;
+}
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
   /* Light grey */
+  border: solid #e0a800 2px;
 }
 
 h1,
@@ -145,10 +88,10 @@ h3 {
   background-color: #fff;
 }
 
-footer {
-  background-color: #343a40;
-  /* Dark grey */
-}
+/* footer {
+  background-color: #b76e79;
+  Dark grey
+} */
 
 a.text-warning {
   color: #ffc107;
@@ -170,8 +113,8 @@ a.text-warning:hover {
 } */
 
 .hero-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat url("../../public/assets/banner.jpg");
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat url("../../public/assets/PMCBanner.png");
+  background-size: calc(100% + 20px) calc(120% + 20px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,14 +134,14 @@ a.text-warning:hover {
   border: solid #e0a800 2px;
 }
 
-#badges{
+#badges {
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
   padding: 20px;
   /* max-width: 800px; */
   margin: 0 auto;
-  /* background-color: #343a40; */
+  /* background-color: #b76e79 ; */
   /* color: white; */
   /* padding: 10px; */
   /* text-align: center; */
@@ -222,4 +165,147 @@ a.text-warning:hover {
 
 .services-card-title {
   margin-bottom: 20px;
+}
+
+
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* styles/globals.css */
+/* This is the controls for the Nav background */
+
+.navbar-brand-color {
+  background-color: rgba(220, 220, 220, 1) !important;
+  /* Navy Blue Text*/
+  /* color: rgba(0,0,80,1) !important; */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand-color .nav-link,
+.navbar-brand-color .navbar-brand,
+.navbar-brand-color .navbar-text {
+  /* Navy Blue Text */
+  color: rgba(0, 0, 80, 1) !important;
+  /* Rose gold text */
+  /* color: #b76e79 !important; */
+  /* Dark grey text for contrast */
+  transition: color 0.3s ease-in-out;
+  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); */
+  cursor: pointer;
+  /* White text */
+  /* color: #fff !important; */
+  /* White text for contrast */
+}
+
+.navbar-brand-color .nav-link:hover,
+.navbar-brand-color .navbar-brand:hover {
+  color: rgb(0, 0, 80) !important;
+  ;
+  /* Light rose gold shade for hover */
+}
+
+/* Ensure dropdown menu matches the theme */
+.navbar-brand-color .dropdown-menu {
+  background-color: rgba(220, 220, 220, 1) !important;
+
+  /* Rose gold text */
+  color: #fff !important;
+  ;
+  /* Darker rose gold for contrast */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  /* White text */
+  color: #fff !important;
+  /* White text for contrast */
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 10px;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 12px;
+  border: solid #e0a800 2px;
+  padding: 10px 20px;
+  margin-left: auto;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  outline: none;
+  position: relative;
+  z-index: 99999,
+}
+
+.navbar-brand-color .dropdown-item {
+  background-color: rgba(220, 220, 220, 1) !important;
+  /* Rose gold text */
+  color: #b76e79 !important;
+}
+
+.navbar-brand-color .dropdown-item:hover {
+  background-color: rgba(220, 220, 220, 1) !important;
+  /* Darker rose gold for hover */
+  color: rgba(0, 0, 80, s 1) !important;
+  ;
+}
+
+/* This class controls the button in the nav */
+
+.btn-brand-color {
+  background-color: #b76e79 !important;
+  ;
+  /* background-color: rgb(236, 184, 138) !important; */
+  /* gold */
+  /* background-color: rgb(181, 128, 22) !important; */
+  margin-left: auto;
+  color: rgba(220, 220, 220, 1) !important;
+  ;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  text-transform: smallcaps !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  outline: none;
+  position: relative;
+  z-index: 99999,
+
+}
+
+.brand-text-color {
+  /* background-color: rgba(220, 220, 220, 1) !important; */
+  /* color: rgba(220, 220, 220, 1) !important; */
+  /* Navy Blue Text*/
+  color: rgba(0, 0, 80, 1) !important;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container-brand-color {
+  /* border: solid #e0a800 2px; */
+  background-color: #b76e7957 !important;
+
+}
+
+.space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-border-radius {
+  border-radius: 20px;
+  border: solid #e0a800 2px;
+  padding: 20px;
+}
+
+.pad {
+  padding: 5%;
 }

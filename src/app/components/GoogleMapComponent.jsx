@@ -52,7 +52,7 @@ export const GoogleMapComponent = () => {
           zoom={mapOptions.zoom}
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d376610.8686588484!2d-83.04864040000001!3d42.48576095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2eb57a36cf0b25cd%3A0xbb0cc1e7f419c7b3!2sPointe%20Roofing%20Improvements!5e0!3m2!1sen!2sus!4v1742956025116!5m2!1sen!2sus"
+            src="https://www.google.com/maps/place/42%C2%B026'47.7%22N+83%C2%B007'30.3%22W/@42.4465699,-83.1293371,17z/data=!3m1!4b1!4m13!1m8!3m7!1s0x8824c9630f83a945:0x8b181fb1382919da!2sW+Seven+Mile+Rd,+Detroit,+MI!3b1!8m2!3d42.4320572!4d-83.1207058!16s%2Fg%2F1q69m950z!3m3!8m2!3d42.44657!4d-83.125082?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
             width="100%"
             height="400"
             style={{ border: 0 }}

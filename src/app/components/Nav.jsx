@@ -21,14 +21,14 @@ export default function AppNav({ onContactClick }) {
 
   return (
     <Navbar
-      bg="dark"
-      variant="dark"
+      // bg="dark"
+      // variant="dark"
       expand="lg"
       sticky="top"
       className={
         isScrolled
-          ? "bg-dark shadow-lg transition-shadow duration-300 ease-in-out"
-          : "bg-dark shadow-lg transition-shadow duration-300 ease-in-out"
+          ? "navbar-brand-color shadow-lg transition-shadow duration-300 ease-in-out"
+          : "navbar-brand-color shadow-lg transition-shadow duration-300 ease-in-out"
       }
     >
       <Navbar.Brand
@@ -39,7 +39,7 @@ export default function AppNav({ onContactClick }) {
         <Link href="/" passHref={true} legacyBehavior={true}>
           <Image
             src={logo}
-            alt="Pointe Roofing Improvements"
+            alt="Prestigious Management Company"
             width={70}
             height={70}
             style={{ padding: "2% 4%", borderRadius: "12%" }}
@@ -49,7 +49,7 @@ export default function AppNav({ onContactClick }) {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse
-        id="basic-navbar-nav"
+        id="basic-navbar-nav navbar-brand-color"
         className="visible"
         style={{ margin: "1rem" }}
       >
@@ -67,35 +67,35 @@ export default function AppNav({ onContactClick }) {
           <NavDropdown
             title="Services"
             id="servicesDropdown"
-            className="bg-dark"
+            className="navbar-brand-color"
           >
             <NavDropdown.Item
-              href="/api/roofing"
-              onClick={() => router.push("/api/roofing")}
+              href="/api/catering"
+              onClick={() => router.push("/api/catering")}
             >
-              Roofing
+              Catering
             </NavDropdown.Item>
             <NavDropdown.Item
-              href="/api/siding"
+              href="/api/event-planning"
               onClick={() =>
                 document
                   .getElementById("services")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              Siding
+              Event Planning
             </NavDropdown.Item>
             <NavDropdown.Item
-              href="/api/gutters"
+              href="/api/rentals"
               onClick={() =>
                 document
                   .getElementById("services")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              Gutters
+              Rentals
             </NavDropdown.Item>
-            <NavDropdown.Item
+            {/* <NavDropdown.Item
               href="/api/skylight"
               onClick={() =>
                 document
@@ -104,7 +104,7 @@ export default function AppNav({ onContactClick }) {
               }
             >
               Skylight
-            </NavDropdown.Item>
+            </NavDropdown.Item> */}
           </NavDropdown>
           <Nav.Link
             href="/api/privacy-policy"
@@ -113,7 +113,7 @@ export default function AppNav({ onContactClick }) {
             Privacy Policy
           </Nav.Link>
         </Nav>
-        <Button variant="warning" onClick={onContactClick}>
+        <Button className="btn-brand-color" onClick={onContactClick}>
           Contact Us Now
         </Button>
       </Navbar.Collapse>

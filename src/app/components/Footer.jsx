@@ -23,7 +23,7 @@ export default function Footer(status) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark text-white py-4">
+    <footer className="py-4 navbar-brand-color brand-text-color">
       <Container>
         {/* Service Area with Map */}
         <Card
@@ -38,7 +38,8 @@ export default function Footer(status) {
           }}
         >
           <h2
-            style={{ textAlign: "center", fontSize: "2.5rem", color: "#444" }}
+            style={{ textAlign: "center", fontSize: "2.5rem" }}
+            className="text-center mb-4 brand-text-color"
           >
             Our Service Area
           </h2>
@@ -52,24 +53,28 @@ export default function Footer(status) {
         </Card>
         <Row>
           <Col md={6}>
-            <h5>Pointe Roofing Improvements</h5>
-            <p>Grosse Pointe, Michigan</p>
+            <h5>Prestigious Management Company</h5>
+            <p>Location: Michigan</p>
             <p>
               Phone:{" "}
-              <a href="tel:+15863608447" className="text-warning">
-                +1 (586) 360-8447
+              <a href="tel:+13139839528" className="">
+                +1 (313) 983-9528
               </a>
             </p>
             <p>
               Email:{" "}
-              <a href="mailto:pointeroofing@gmail.com" className="text-warning">
-                pointeroofing@gmail.com
+              <a
+                href="mailto:prestigiousmanagementcompany@gmail.com
+"
+                className=""
+              >
+                prestigiousmanagementcompany@gmail.com
               </a>
             </p>
           </Col>
-          <Col md={6} className="text-md-end">
+          <Col md={6} className="">
             <p>
-              &copy; {currentYear} Pointe Roofing Improvements. All Rights
+              &copy; {currentYear} Prestigious Management Company. All Rights
               Reserved.
             </p>
           </Col>

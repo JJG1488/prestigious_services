@@ -8,10 +8,28 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ContactModal from "./components/EnhancedContactModal";
+import Button from "react-bootstrap/Button";
 
 const metadata = {
-  title: "Pointe Roofing Improvements",
-  description: "Top Roofing Services in Grosse Pointe, MI",
+  title: "Prestigious Management Company",
+  description: "Top Catering, Event Planning, & Rentals in Michigan",
+  openGraph: {
+    title: "Prestigious Management Company",
+    description:
+      "Discover top-tier catering, event planning, and rental services in Michigan. From weddings to corporate events, we bring your vision to life with gourmet menus and stunning setups.",
+    url: "https://prestigiousmanagementcompany.com",
+    siteName: "Prestigious Management Company",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 800,
+        height: 600,
+        alt: "Prestigious Management Company",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -31,28 +49,28 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Top Roofing Services in Grosse Pointe, MI"
+          content="Discover top-tier catering, event planning, and rental services in Michigan. From weddings to corporate events, we bring your vision to life with gourmet menus and stunning setups."
         />
         <meta
           name="keywords"
-          content="roofing, Grosse Pointe, Michigan, home improvement"
+          content="catering, Detroit, event planning Michigan, rental services, wedding catering, corporate events, party rentals"
         />
-        <meta name="author" content="Pointe Roofing Improvements" />
-        <meta property="og:title" content="Pointe Roofing Improvements" />
+        <meta name="author" content="Prestigious Management Company" />
+        <meta property="og:title" content="Prestigious Management Company" />
         <meta
           property="og:description"
-          content="Top Roofing Services in Grosse Pointe, MI"
+          content="Top Catering, Event Planning, & Rentals in Michigan"
         />
         <meta property="og:image" content="/og-image.jpg" />
         <meta
           property="og:url"
-          content="https://pointeroofingimprovements.com"
+          content="https://prestigiousmanagementcompany.com"
         />
         <meta property="og:type" content="website" />
         {/* <meta name="twitter:card" content="summary_large_image" /> 
-        <meta name="twitter:site" content="@pointeroofingimprovements" />
-        <meta name="twitter:title" content="Pointe Roofing Improvements" />
-        <meta name="twitter:description" content="Top Roofing Services in Grosse Pointe, MI" />
+        <meta name="twitter:site" content="@" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
         <meta name="twitter:image" content="/og-image.jpg" /> */}
         <link
           rel="stylesheet"
@@ -93,12 +111,12 @@ export default function RootLayout({ children }) {
               zIndex: 1000,
             }}
           >
-            <button
-              className="btn btn-warning"
+            <Button
+              className="btn-brand-color"
               onClick={() => setShowModal(true)}
             >
               Contact Us Now
-            </button>
+            </Button>
           </div>
         )}
         <ContactModal show={showModal} onHide={() => setShowModal(false)} />

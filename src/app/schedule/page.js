@@ -85,7 +85,7 @@ export default function SchedulePage() {
             <Alert variant="info">
               {/* Link to an embedded scheduling widget here. */}
               <a
-                href="https://calendly.com/pointeroofing"
+                href="https://calendly.com/prestigiousmanagementcompany/30min"
                 target="_blank"
                 rel="noopener noreferrer"
               >
