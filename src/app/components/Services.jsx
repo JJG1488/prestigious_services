@@ -9,7 +9,7 @@ export default function Services() {
       title: "Catering Services",
       description:
         "Delicious, customized menus for every occasion, from weddings to corporate events.",
-      image: "/PMC_Assets/EventPhotos/IMG_3333.jpg",
+      image: "/PMC_Assets/EventPhotos/IMG_3871.jpeg",
     },
     {
       title: "Event Planning",
