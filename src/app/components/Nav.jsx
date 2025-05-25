@@ -106,12 +106,12 @@ export default function AppNav({ onContactClick }) {
               Skylight
             </NavDropdown.Item> */}
           </NavDropdown>
-          <Nav.Link
+          {/* <Nav.Link
             href="/api/privacy-policy"
             onClick={() => router.push("/api/privacy-policy")}
           >
             Privacy Policy
-          </Nav.Link>
+          </Nav.Link> */}
         </Nav>
         <Button className="btn-brand-color" onClick={onContactClick}>
           Contact Us Now

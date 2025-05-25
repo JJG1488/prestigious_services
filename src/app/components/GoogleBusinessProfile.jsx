@@ -43,7 +43,7 @@ export default function GoogleBusinessProfile() {
             ))}{" "}
             (10 reviews)
           </p>
-          <p>
+          {/* <p>
             <a
               href="https://www.google.com"
               target="_blank"
@@ -52,7 +52,7 @@ export default function GoogleBusinessProfile() {
             >
               Our Reviews on Google!
             </a>
-          </p>
+          </p> */}
         </Col>
         {/* Reviews Carousel */}
         <Col md={8}>
